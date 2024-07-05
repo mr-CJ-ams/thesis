@@ -1,0 +1,82 @@
+:root{
+    --box-border: 1px solid black;
+}
+
+body{
+    display: flex;
+    border: var(--box-border);
+    height: 1200px;
+}
+
+nav, 
+main{
+    border: var(--box-border);
+    border-radius: 1.5rem;
+    height: 100%;
+}
+
+nav{
+    display: block;
+    position: fixed;
+}
+
+.nav-bar,
+.profile-section{
+    border: var(--box-border);
+    border-radius: 1.5rem;
+    width: 100%;
+}
+.profile-section{
+    height: 15%;
+}
+.nav-bar {
+    height: 50%;
+    display: block;
+    padding-top: 1rem;
+}
+
+.nav-btn{
+    border: var(--box-border);
+    border-radius: 1.5rem;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+
+
+/* ----------------------------------------------------------- */
+
+@media screen and (min-width: 1024px){
+    nav{
+        width: 15%;
+    }
+    
+    main{
+        width: 85%;
+        margin-left: 15.5%;
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1023px){
+    nav{
+        width: 25%;
+    }
+    
+    main{
+        width: 100%;
+        margin-left: 26%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    nav{
+        width: 25%;
+    }
+    
+    main{
+        width: 75%;
+        margin-left: 26%;
+    }
+}
+
