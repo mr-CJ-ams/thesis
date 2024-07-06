@@ -57,6 +57,13 @@ nav{
 .profile-img-container{
     margin-top: 10%;
 }
+
+.profile-img-container:hover, .profile-img-container img:hover{
+    height: 70px;
+    width: 70px;
+    border-radius: 3rem;
+}
+
 .profile-img-container, .profile-img-container img{
     height: 60px;
     width: 60px;
@@ -73,18 +80,24 @@ nav{
 }
 
 .nav-btn{
-    border: var(--box-border);
+    /* border: var(--box-border); */
     border-radius: var(--box-border-radius-l);
     width: 85%;
     margin: 0 auto;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.126);
+}
+
+.nav-btn:hover{
+    background-color: rgba(255, 255, 255, 0.378);
 }
 
 .nav-btn i{
     margin-left: 25%;
+    margin-right: 7%;
+    color: var(--color-palette-light-gold);
 }
 
 
