@@ -1,18 +1,38 @@
 :root{
     --box-border: 1px solid black;
+
+
+    --box-border-radius-l: 25px;
+    --box-border-radius-m: 15px;
+    --box-border-radius-s: 10px;
+
+    
+    --container-border-radius: 15px;
+
+    /* COLOR PALETTES */
+    --color-palette-teal: #049AA0;
+    --color-palette-torqouise: #04B1B8;
+    --color-palette-cyan: #D1E3E8;
+    --color-palette-light-gold: #EDC14F;
 }
 
 body{
     display: flex;
     border: var(--box-border);
     height: 1200px;
+    margin: 0px;
+    background-color: var(--color-palette-cyan);
 }
 
 nav, 
 main{
     border: var(--box-border);
-    border-radius: 1.5rem;
+    border-radius: var(--container-border-radius);
     height: 100%;
+}
+
+main{
+    background-color: var(--color-palette-cyan);
 }
 
 nav{
@@ -23,24 +43,48 @@ nav{
 .nav-bar,
 .profile-section{
     border: var(--box-border);
-    border-radius: 1.5rem;
+    border-radius: var(--container-border-radius);
     width: 100%;
 }
 .profile-section{
-    height: 15%;
+    height: 20%;
+    background-color: var(--color-palette-teal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.profile-img-container{
+    margin-top: 10%;
+}
+.profile-img-container, .profile-img-container img{
+    height: 60px;
+    width: 60px;
+    border-radius: 2rem;
+    border: var(--box-border);
+}
+
+
 .nav-bar {
-    height: 50%;
+    height: 100%;
     display: block;
     padding-top: 1rem;
+    background-color: var(--color-palette-torqouise);
 }
 
 .nav-btn{
     border: var(--box-border);
-    border-radius: 1.5rem;
+    border-radius: var(--box-border-radius-l);
     width: 85%;
     margin: 0 auto;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.nav-btn i{
+    margin-left: 25%;
 }
 
 

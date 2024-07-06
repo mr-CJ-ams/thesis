@@ -5,28 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="..\src\styles\style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <nav>
-        <div class="profile-section">
-            <h4>Profile</h4>
+        <div class="profile-section" >
+            <div class="profile-img-container">
+                <img src="..\src\img\Default_pfp.png" alt="Profile">
+            </div>
+            <p>Resort Name</p>
         </div>
 
-        <div class="nav-bar">
-            <div class="nav-btn dashboard"><h5>Dashboard</h5></div>
-            <div class="nav-btn submit"><h5>Submit</h5></div>
-            <div class="nav-btn track"><h5>Track</h5></div>
-            <div class="nav-btn logout"><h5>Logout</h5></div>
+        <div class="nav-bar text-center" >
+            <div class="nav-btn dashboard">
+                <i class="ri-dashboard-fill" style="color: var(--color-palette-light-gold)"></i>
+                <p>Dashboard</p>
+            </div>
+            <div class="nav-btn submit">
+                <i class="ri-send-plane-2-fill" style="color: var(--color-palette-light-gold)"></i>
+                <p>Submit</p>
+            </div>
+            <div class="nav-btn track">
+                <i class="ri-file-history-fill" style="color:  var(--color-palette-light-gold)"></i>
+                <p>Track</p>
+            </div>
+            <div class="nav-btn logout">
+                <i class="ri-logout-box-fill" style="color:  var(--color-palette-light-gold)"></i>
+                <p>Logout</p>
+            </div>
         </div>
     </nav>
     <main>
         <div class="dashboard">
-            <h1>Hello World</h1>
+            <h1 class="display-2 text-center"> Hello World</h1>
         </div>
     </main>
 
     <script src="..\src\components\script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
 </body>
 </html>
